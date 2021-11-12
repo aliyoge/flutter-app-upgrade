@@ -49,7 +49,7 @@ class AppUpgrade {
   ///
   static appUpgrade(
     BuildContext context,
-    Future<AppUpgradeInfo> future, {
+    Future<AppUpgradeInfo?> future, {
     TextStyle? titleStyle,
     TextStyle? contentStyle,
     String? cancelText,
@@ -66,8 +66,8 @@ class AppUpgrade {
     DownloadProgressCallback? downloadProgress,
     DownloadStatusChangeCallback? downloadStatusChange,
   }) {
-    future.then((AppUpgradeInfo appUpgradeInfo) {
-      if (appUpgradeInfo != null && appUpgradeInfo.title != null) {
+    future.then((AppUpgradeInfo? appUpgradeInfo) {
+      if (appUpgradeInfo != null) {
         _showUpgradeDialog(context, appUpgradeInfo.title, appUpgradeInfo.contents,
             apkDownloadUrl: appUpgradeInfo.apkDownloadUrl,
             force: appUpgradeInfo.force,
