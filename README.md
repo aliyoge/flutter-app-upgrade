@@ -10,12 +10,12 @@
 dependencies:
   flutter_app_upgrade:
     git:
-      url: git://github.com/aliyoge/flutter-app-upgrade.git
+      url: https://github.com/aliyoge/flutter-app-upgrade.git
 ```
 
 2、执行flutter命令获取包：
 ```
-flutter pub get`
+flutter pub get
 ```
 
 3、引入
