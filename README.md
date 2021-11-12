@@ -1,3 +1,4 @@
+### 更新支持`Null safety`
 
 > 官网地址：[http://laomengit.com/plugin/upgrade.html](http://laomengit.com/plugin/upgrade.html)
 
@@ -7,7 +8,8 @@
 
 ```
 dependencies:
-  flutter_app_upgrade: ^1.1.0
+  git:
+    url: git@github.com:aliyoge/flutter-app-upgrade.git
 ```
 
 2、执行flutter命令获取包：

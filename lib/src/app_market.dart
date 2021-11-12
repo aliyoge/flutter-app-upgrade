@@ -27,8 +27,8 @@ class AppMarket {
     return marketList;
   }
 
-  static AppMarketInfo getBuildInMarket(String packageName) {
-    AppMarketInfo _info;
+  static AppMarketInfo? getBuildInMarket(String packageName) {
+    AppMarketInfo? _info;
     buildInMarketList.forEach((f) {
       if (f.packageName == packageName) {
         _info = f;
@@ -41,18 +41,7 @@ class AppMarket {
   /// 获取所有内置的应用商店
   ///
   static List<AppMarketInfo> get buildInMarketList {
-    return [
-      xiaoMi,
-      meiZu,
-      vivo,
-      oppo,
-      huaWei,
-      zte,
-      qiHoo,
-      tencent,
-      pp,
-      wanDouJia
-    ];
+    return [xiaoMi, meiZu, vivo, oppo, huaWei, zte, qiHoo, tencent, pp, wanDouJia];
   }
 
   ///
@@ -64,8 +53,8 @@ class AppMarket {
   ///
   /// 魅族
   ///
-  static final meiZu = AppMarketInfo('meiZu', "com.meizu.mstore",
-      "com.meizu.flyme.appcenter.activitys.AppMainActivity");
+  static final meiZu = AppMarketInfo(
+      'meiZu', "com.meizu.mstore", "com.meizu.flyme.appcenter.activitys.AppMainActivity");
 
   ///
   /// vivo
@@ -87,8 +76,8 @@ class AppMarket {
   ///
   /// zte
   ///
-  static final zte = AppMarketInfo('zte', "zte.com.market",
-      "zte.com.market.view.zte.drain.ZtDrainTrafficActivity");
+  static final zte = AppMarketInfo(
+      'zte', "zte.com.market", "zte.com.market.view.zte.drain.ZtDrainTrafficActivity");
 
   ///
   /// 360
@@ -99,22 +88,20 @@ class AppMarket {
   ///
   /// 应用宝
   ///
-  static final tencent = AppMarketInfo(
-      'tencent',
-      "com.tencent.android.qqdownloader",
+  static final tencent = AppMarketInfo('tencent', "com.tencent.android.qqdownloader",
       "com.tencent.pangu.link.LinkProxyActivity");
 
   ///
   /// pp助手
   ///
-  static final pp = AppMarketInfo(
-      'pp', "com.pp.assistant", "com.pp.assistant.activity.MainActivity");
+  static final pp =
+      AppMarketInfo('pp', "com.pp.assistant", "com.pp.assistant.activity.MainActivity");
 
   ///
   /// 豌豆荚
   ///
-  static final wanDouJia = AppMarketInfo('wanDouJia', "com.wandoujia.phoenix2",
-      "com.pp.assistant.activity.PPMainActivity");
+  static final wanDouJia = AppMarketInfo(
+      'wanDouJia', "com.wandoujia.phoenix2", "com.pp.assistant.activity.PPMainActivity");
 }
 
 class AppMarketInfo {
