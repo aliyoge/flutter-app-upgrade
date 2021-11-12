@@ -8,8 +8,9 @@
 
 ```
 dependencies:
-  git:
-    url: git@github.com:aliyoge/flutter-app-upgrade.git
+  flutter_app_upgrade:
+    git:
+      url: git//github.com:aliyoge/flutter-app-upgrade.git
 ```
 
 2、执行flutter命令获取包：
